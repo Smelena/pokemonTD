@@ -15,8 +15,8 @@
 #Unity3D Generated File On Crash Reports
 sysinfo.txt
 .DS_Store
-Library
-Temp
+Library/
+Temp/
 *.csproj
 *.pidb
 *.unityproj
@@ -36,7 +36,8 @@ Temp
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
