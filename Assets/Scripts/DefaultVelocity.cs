@@ -6,6 +6,6 @@ public class DefaultVelocity : MonoBehaviour {
     public Vector2 velocity;
 
     void FixedUpdate () {
-        rigidbody2D.velocity = velocity;
+        rigidbody2D.velocity = (velocity * 2);
     }
 }

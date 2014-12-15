@@ -18,7 +18,7 @@ public class character : MonoBehaviour
 	void Update ()
 	{
 			if (hasEnemy) {//TODO: Detect enemy
-					if ((Time.time - lastAttack) >= cooldown) {
+					if ((Time.time - lastAttack) >= 10000) {
 							//TODO: attack
 							lastAttack = Time.time; //if attack set time to now
 					}

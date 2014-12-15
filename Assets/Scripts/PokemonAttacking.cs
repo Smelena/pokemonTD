@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ZombieAttacking : MonoBehaviour {
+public class PokemonAttacking : MonoBehaviour {
     // Last Attack Time
     float last = 0;
 

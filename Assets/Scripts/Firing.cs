@@ -6,12 +6,12 @@ public class Firing : MonoBehaviour {
     public GameObject bulletPrefab;
 
     // Shooting Interval
-    public float interval = 0.5f;
+    public float interval = 1000;
 
     // Use this for initialization
     void Start () {
         // Try to shoot every few seconds
-        InvokeRepeating("Shoot", 0, interval);
+        InvokeRepeating("Shoot", 1, interval);
     }
 
     bool zombieInFront() {
