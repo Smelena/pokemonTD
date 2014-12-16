@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SunCollect : MonoBehaviour {
     // Global score
-    public static int score = 3;
+    public static int score = 5;
 
     void OnMouseDown() {
         // Increase Score
