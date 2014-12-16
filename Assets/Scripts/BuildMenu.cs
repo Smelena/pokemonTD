@@ -18,7 +18,7 @@ public class BuildMenu : MonoBehaviour {
 
 	void Start() {
 
-		InvokeRepeating("AddTick", 10, 10);
+		InvokeRepeating("AddTick", 1, 1);
 		print (numberOfTicks);
 
 	}
@@ -40,12 +40,12 @@ public class BuildMenu : MonoBehaviour {
 
         // Draw the pokeball
         //GUILayout.Box(new GUIContent(pokeballCollect.score.ToString(), pokeballImage));
-		GUILayout.Box(new GUIContent(pokeballCollect.score.ToString(), pokeballImage));
+		GUILayout.Box(new GUIContent(SunCollect.score.ToString(), pokeballImage));
 		GUILayout.Box(new GUIContent(emptyBoxTexture));
 		int iter = -2;
         // Draw each playerpoke's BuildInfo
         foreach (BuildInfo bi in playerpokes) {
-			GUI.enabled = (numberOfTicks >= (12 + (iter * 12)) && pokeballCollect.score >= bi.price);
+			GUI.enabled = (numberOfTicks >= (105 + (iter * 105)) && SunCollect.score >= bi.price);
 			//GUI.enabled = true;
             if (GUILayout.Button(new GUIContent(bi.price.ToString(), bi.previewImage)))
                 cur = bi;

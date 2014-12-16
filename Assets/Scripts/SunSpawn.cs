@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class pokeballSpawn : MonoBehaviour {
+public class SunSpawn : MonoBehaviour {
     public GameObject prefab;
 
     // Use this for initialization

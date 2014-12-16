@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class pokeballCollect : MonoBehaviour {
+public class SunCollect : MonoBehaviour {
     // Global score
     public static int score = 5;
 
