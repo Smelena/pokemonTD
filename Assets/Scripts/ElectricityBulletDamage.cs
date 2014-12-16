@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BulletDamage : MonoBehaviour {
+public class ElectricityBulletDamage : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D co) {
         // Zombie?
@@ -21,16 +21,16 @@ public class BulletDamage : MonoBehaviour {
 				co.GetComponent<Health>().doDamage(damage);
 				break;
 				case 3:
-				co.GetComponent<Health>().doDamage(damage);
+				co.GetComponent<Health>().doDamage(damage*2);
 				break;
 				case 4:
 				co.GetComponent<Health>().doDamage(damage);
 				break;
 				case 5:
-				co.GetComponent<Health>().doDamage(damage*2);
+				co.GetComponent<Health>().doDamage(0);
 				break;
 				case 6:
-				co.GetComponent<Health>().doDamage(damage*2);
+				co.GetComponent<Health>().doDamage(damage);
 				break;
 				case 7:
 				co.GetComponent<Health>().doDamage(damage);
@@ -42,16 +42,16 @@ public class BulletDamage : MonoBehaviour {
 				co.GetComponent<Health>().doDamage(damage);
 				break;
 				case 10:
-				co.GetComponent<Health>().doDamage(damage*2);
+				co.GetComponent<Health>().doDamage(damage);
 				break;
 				case 11:
-				co.GetComponent<Health>().doDamage(damage*0.5f);
+				co.GetComponent<Health>().doDamage(damage*2);
 				break;
 				case 12:
 				co.GetComponent<Health>().doDamage(damage*0.5f);
 				break;
 				case 13:
-				co.GetComponent<Health>().doDamage(damage);
+				co.GetComponent<Health>().doDamage(damage*0.5f);
 				break;
 				case 14:
 				co.GetComponent<Health>().doDamage(damage);

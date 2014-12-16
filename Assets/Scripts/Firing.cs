@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Firing : MonoBehaviour {
     // The Bullet Prefab
+
     public GameObject bulletPrefab;
 
     // Shooting Interval
