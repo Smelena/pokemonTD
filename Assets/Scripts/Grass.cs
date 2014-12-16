@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Grass : MonoBehaviour {
 	
-	public static bool isFilled = false;
+	public bool isFilled = false;
 	
 	void OnMouseUpAsButton() {
 		// Is there something to build?
