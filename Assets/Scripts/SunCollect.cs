@@ -12,4 +12,7 @@ public class SunCollect : MonoBehaviour {
         // Destroy Sun
         Destroy(gameObject);
     }
+	void OnBecameInvisible() {
+		Destroy( gameObject ); 
+	}
 }
