@@ -7,7 +7,7 @@ public class SunSpawn : MonoBehaviour {
     // Use this for initialization
     void Start() {
         // Spawn first Sun in 10 seconds, repeat every 10 seconds
-        InvokeRepeating("Spawn", 10, 10);
+        InvokeRepeating("Spawn", 18, 18);
     }
     
     void Spawn() {

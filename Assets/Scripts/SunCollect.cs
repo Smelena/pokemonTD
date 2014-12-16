@@ -3,11 +3,11 @@ using System.Collections;
 
 public class SunCollect : MonoBehaviour {
     // Global score
-    public static int score = 600;
+    public static int score = 3;
 
     void OnMouseDown() {
         // Increase Score
-        score += 20;
+        score += 1;
 
         // Destroy Sun
         Destroy(gameObject);

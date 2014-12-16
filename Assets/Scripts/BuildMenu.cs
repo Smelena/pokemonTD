@@ -4,6 +4,7 @@ using System.Collections;
 public class BuildMenu : MonoBehaviour {
     // Sun Image
     public Texture sunImage;
+	public Texture emptyBoxTexture;
 
 
 
@@ -39,10 +40,12 @@ public class BuildMenu : MonoBehaviour {
 
         // Draw the Sun
         //GUILayout.Box(new GUIContent(SunCollect.score.ToString(), sunImage));
+		GUILayout.Box(new GUIContent(SunCollect.score.ToString(), sunImage));
+		GUILayout.Box(new GUIContent(emptyBoxTexture));
 		int iter = -2;
         // Draw each Plant's BuildInfo
         foreach (BuildInfo bi in plants) {
-			GUI.enabled = (numberOfTicks >= (12 + (iter * 12)));
+			GUI.enabled = (numberOfTicks >= (12 + (iter * 12)) && SunCollect.score >= bi.price);
             if (GUILayout.Button(new GUIContent(bi.price.ToString(), bi.previewImage)))
                 cur = bi;
 			iter = iter + 1;
