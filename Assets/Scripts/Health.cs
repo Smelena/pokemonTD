@@ -11,7 +11,14 @@ public class Health : MonoBehaviour {
         cur -= n;
 
         // Destroy if died
-        if (cur <= 0)
-            Destroy(gameObject);
+        if (cur <= 0) {
+			if(gameObject.tag == "Plant") { 
+				Grass.isFilled = false;
+				Destroy (gameObject);
+			}
+			else {
+				Destroy (gameObject);
+			}
+		}
     }
 }
