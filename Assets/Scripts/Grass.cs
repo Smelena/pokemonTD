@@ -10,7 +10,7 @@ public class Grass : MonoBehaviour {
 		if (BuildMenu.cur != null && !isFilled) {
 			// Build it
 			Instantiate(BuildMenu.cur.gameObject, transform.position, Quaternion.identity);
-			SunCollect.score -= BuildMenu.cur.price;
+			pokeballCollect.score -= BuildMenu.cur.price;
 			BuildMenu.cur = null;
 			isFilled = true;
 		}

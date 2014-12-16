@@ -4,7 +4,7 @@ using System.Collections;
 public class NormalBulletDamage : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D co) {
-        // Zombie?
+        // enemypoke?
 
 		int damage = 1;
 

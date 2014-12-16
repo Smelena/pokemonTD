@@ -2,16 +2,16 @@
 using System.Collections;
 
 public class BuildMenu : MonoBehaviour {
-    // Sun Image
-    public Texture sunImage;
+    // pokeball Image
+    public Texture pokeballImage;
 	public Texture emptyBoxTexture;
 
 
 
-    // Plant Prefabs
-    public BuildInfo[] plants;
+    // playerpoke Prefabs
+    public BuildInfo[] playerpokes;
 
-    // Currently building plant
+    // Currently building playerpoke
     public static BuildInfo cur;
 
 	public int numberOfTicks = 0;
@@ -38,14 +38,14 @@ public class BuildMenu : MonoBehaviour {
         GUILayout.BeginArea(new Rect(Screen.width/2 - 350, -7, 700, 200));
         GUILayout.BeginHorizontal("box");
 
-        // Draw the Sun
-        //GUILayout.Box(new GUIContent(SunCollect.score.ToString(), sunImage));
-		GUILayout.Box(new GUIContent(SunCollect.score.ToString(), sunImage));
+        // Draw the pokeball
+        //GUILayout.Box(new GUIContent(pokeballCollect.score.ToString(), pokeballImage));
+		GUILayout.Box(new GUIContent(pokeballCollect.score.ToString(), pokeballImage));
 		GUILayout.Box(new GUIContent(emptyBoxTexture));
 		int iter = -2;
-        // Draw each Plant's BuildInfo
-        foreach (BuildInfo bi in plants) {
-			GUI.enabled = (numberOfTicks >= (12 + (iter * 12)) && SunCollect.score >= bi.price);
+        // Draw each playerpoke's BuildInfo
+        foreach (BuildInfo bi in playerpokes) {
+			GUI.enabled = (numberOfTicks >= (12 + (iter * 12)) && pokeballCollect.score >= bi.price);
 			//GUI.enabled = true;
             if (GUILayout.Button(new GUIContent(bi.price.ToString(), bi.previewImage)))
                 cur = bi;

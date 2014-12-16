@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SunCollect : MonoBehaviour {
+public class pokeballCollect : MonoBehaviour {
     // Global score
     public static int score = 5;
 
@@ -9,7 +9,7 @@ public class SunCollect : MonoBehaviour {
         // Increase Score
         score += 1;
 
-        // Destroy Sun
+        // Destroy pokeball
         Destroy(gameObject);
     }
 	void OnBecameInvisible() {

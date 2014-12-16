@@ -7,8 +7,8 @@ public class BossAttacking : MonoBehaviour
 	float last = 0;
 	
 	void OnCollisionStay2D(Collision2D coll) {
-		// Collided with a Plant?
-		if (coll.gameObject.tag == "Plant") {
+		// Collided with a pokeball?
+		if (coll.gameObject.tag == "pokeball") {
 			// Play Attack Animation
 			//GetComponent<Animator>().SetTrigger("IsAttacking");
 			// Deal damage once a second

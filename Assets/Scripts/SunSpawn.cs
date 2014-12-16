@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SunSpawn : MonoBehaviour {
+public class pokeballSpawn : MonoBehaviour {
     public GameObject prefab;
 
     // Use this for initialization
     void Start() {
-        // Spawn first Sun in 10 seconds, repeat every 10 seconds
+        // Spawn first pokeball in 10 seconds, repeat every 10 seconds
         InvokeRepeating("Spawn", 18, 18);
     }
     

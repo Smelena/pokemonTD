@@ -6,7 +6,7 @@ public class PokemonAttacking : MonoBehaviour {
     float last = 0;
 
     void OnCollisionStay2D(Collision2D coll) {
-        // Collided with a Plant?
+        // Collided with a pokeball?
         if (coll.gameObject.tag == "Plant") {
             // Play Attack Animation
             //GetComponent<Animator>().SetTrigger("IsAttacking");

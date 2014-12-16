@@ -6,7 +6,7 @@ public class TownAttacked : MonoBehaviour {
 	bool showGameOver = false;
 
 	void OnCollisionStay2D(Collision2D coll) {
-		// Collided with a Zombie?
+		// Collided with a enemypoke?
 		if (coll.gameObject.tag == "Zombie") {
 			showGameOver = true;
 		}

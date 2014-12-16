@@ -4,7 +4,7 @@ using System.Collections;
 public class PsychicBulletDamage : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D co) {
-        // Zombie?
+        // enemypoke?
 
 		int damage = 1;
 
