@@ -45,7 +45,8 @@ public class BuildMenu : MonoBehaviour {
 		int iter = -2;
         // Draw each Plant's BuildInfo
         foreach (BuildInfo bi in plants) {
-			GUI.enabled = (numberOfTicks >= (12 + (iter * 12)) && SunCollect.score >= bi.price);
+			//GUI.enabled = (numberOfTicks >= (12 + (iter * 12)) && SunCollect.score >= bi.price);
+			GUI.enabled = true;
             if (GUILayout.Button(new GUIContent(bi.price.ToString(), bi.previewImage)))
                 cur = bi;
 			iter = iter + 1;
